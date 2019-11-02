@@ -1,5 +1,5 @@
 
-class Thermometer( private var meinSensor : Sensor, var myObserver : TemperatureObserver) {
+class Thermometer( private var meinSensor : Sensor) {
 
     val observerList = ArrayList<TemperatureObserver>()
 
@@ -7,7 +7,7 @@ class Thermometer( private var meinSensor : Sensor, var myObserver : Temperature
         var durchlaufe = n
         while ( durchlaufe != 0 ){
             var newValue = meinSensor.getTemperature()
-            println ("@Thermometer misst: ${newValue} Grad")
+            // println ("@Thermometer misst: ${newValue} Grad")
             informObserver( newValue )
             durchlaufe--
         }
