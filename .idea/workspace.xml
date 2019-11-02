@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c5c7fc8-51ed-4d4d-a689-2eb8454facb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HeatingSystem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TemperatureAlert.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TemperatureObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeatherReport.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thermometer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thermometer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeatingSystem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IgnoreDuplicates.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomSensor.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RoundValues.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sensor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sensor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SensorLimits.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SensorLogger.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TemperatureAlert.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TemperatureObserver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemperatureObserver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UpDownSensor.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WeatherReport.kt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
