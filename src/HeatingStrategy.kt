@@ -17,25 +17,25 @@ class InstantHeatingStrategy : HeatingStrategy {
 class SensibleHeatingStrategy : HeatingStrategy {
 
     override fun needsHeating( last10measurements : List<Float> ) : Boolean {
-        var itDoesNeedHeating : Boolean = false
 
         last10measurements.forEach{
-            if( it <= (20).toFloat() ) itDoesNeedHeating = true
+            if( it <= (20).toFloat() ) return true
         }
-        return itDoesNeedHeating
+
+        return false
+
     }
 }
 
 class ReasonableHeatingStrategy : HeatingStrategy {
 
     override fun needsHeating( last10measurements : List<Float> ) : Boolean {
-        var instantNeeded = 0
-        var calmNeed = 0
+        var counter = 0
 
         last10measurements.forEach{
-            if( it <= (15).toFloat() ) instantNeeded++
-            if( it <= (19).toFloat() ) calmNeed++
+            if( it <= (15).toFloat() ) return true
+            if( it <= (19).toFloat() ) counter++
         }
-        return (instantNeeded >= 1) || (calmNeed >= 5)
+        return (counter >= 5)
     }
 }
