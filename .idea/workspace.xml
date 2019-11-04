@@ -4,8 +4,6 @@
     <list default="true" id="9c5c7fc8-51ed-4d4d-a689-2eb8454facb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HeatingStrategy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeatingStrategy.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sensor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sensor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thermometer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thermometer.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

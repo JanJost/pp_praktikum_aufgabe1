@@ -29,11 +29,13 @@ class SensibleHeatingStrategy : HeatingStrategy {
 class ReasonableHeatingStrategy : HeatingStrategy {
 
     override fun needsHeating( last10measurements : List<Float> ) : Boolean {
-        var counter = 0
+        var instantNeeded = 0
+        var calmNeed = 0
 
         last10measurements.forEach{
-            if( it <= (15).toFloat() ) counter++
+            if( it <= (15).toFloat() ) instantNeeded++
+            if( it <= (19).toFloat() ) calmNeed++
         }
-        return counter >= 5
+        return (instantNeeded >= 1) || (calmNeed >= 5)
     }
 }
