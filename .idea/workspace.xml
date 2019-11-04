@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c5c7fc8-51ed-4d4d-a689-2eb8454facb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HeatingStrategy.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/AppKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/AppKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/IgnoreDuplicates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/IgnoreDuplicates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/RandomSensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/RandomSensor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/RoundValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/RoundValues.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/SensorLimits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/SensorLimits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/SensorLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/SensorLogger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/Thermometer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/Thermometer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/UpDownSensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pp_praktikum_aufgabe1/UpDownSensor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TemperatureObserver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemperatureObserver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeatingStrategy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeatingStrategy.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sensor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sensor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Thermometer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thermometer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +29,8 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+    <property name="settings.editor.splitter.proportion" value="0.23297137" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -90,7 +82,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

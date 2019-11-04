@@ -1,3 +1,4 @@
+import kotlin.math.roundToInt
 import kotlin.random.Random
 
 interface Sensor {
@@ -20,17 +21,16 @@ class RandomSensor() : Sensor {
 
 class UpDownSensor() : Sensor {
 
-    val startValue : Float = 22F
-    var tempChangeCounter = 0
-    private var aktuelleTemperatur : Float = 0.0F
+    private var aktuelleTemperatur : Float = 22.0F
 
     override fun getTemperature(): Float {
         var schwankung : Float = Random.nextFloat()
-        var schwankungCause : Int = Random.nextInt(1, 3)
+        var schwankungCause : Int = Random.nextInt(1, 4)
 
         when (schwankungCause) {
             1 -> aktuelleTemperatur += schwankung
             2 -> aktuelleTemperatur -= schwankung
+            3 -> aktuelleTemperatur
             else -> { // Note the block
                 print("Fehler: SchwankungCause liefert falsche Werte")
             }
@@ -43,7 +43,7 @@ class UpDownSensor() : Sensor {
 open class RoundValues( var zurundenderSensor: Sensor ) : Sensor {
 
     override fun getTemperature(): Float {
-        return this.zurundenderSensor.getTemperature().toInt().toFloat()
+        return this.zurundenderSensor.getTemperature().roundToInt().toFloat()
     }
 
 }
@@ -83,10 +83,10 @@ open class IgnoreDuplicates( var zuIgnorierndeWerteSensor : Sensor ) : Sensor {
 
         var matchingSensorValue : Float = this.zuIgnorierndeWerteSensor.getTemperature()
 
-        while (matchingSensorValue.toInt() == oldValue.toInt() ) {
+        while (matchingSensorValue.roundToInt() == oldValue.roundToInt() ) {
             matchingSensorValue = this.zuIgnorierndeWerteSensor.getTemperature()
         }
-
+        oldValue = matchingSensorValue
         return matchingSensorValue
     }
 

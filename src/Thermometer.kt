@@ -3,13 +3,14 @@ class Thermometer( private var meinSensor : Sensor) {
 
     val observerList = ArrayList<TemperatureObserver>()
 
-    fun startChecking ( n : Int ) {
-        var durchlaufe = n
-        while ( durchlaufe != 0 ){
-            var newValue = meinSensor.getTemperature()
+    fun startChecking ( durchlaufe : Int ) {
+
+        for ( x in 0..durchlaufe ){
+
             // println ("@Thermometer misst: ${newValue} Grad")
-            informObserver( newValue )
-            durchlaufe--
+
+            informObserver( meinSensor.getTemperature() )
+
         }
     }
 

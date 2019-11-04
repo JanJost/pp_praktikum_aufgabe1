@@ -17,12 +17,12 @@ class InstantHeatingStrategy : HeatingStrategy {
 class SensibleHeatingStrategy : HeatingStrategy {
 
     override fun needsHeating( last10measurements : List<Float> ) : Boolean {
-        var isit : Boolean = false
+        var itDoesNeedHeating : Boolean = false
 
         last10measurements.forEach{
-            if( it <= (20).toFloat() ) isit = true
+            if( it <= (20).toFloat() ) itDoesNeedHeating = true
         }
-        return isit
+        return itDoesNeedHeating
     }
 }
 
