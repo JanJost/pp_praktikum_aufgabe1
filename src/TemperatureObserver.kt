@@ -29,7 +29,7 @@ class WeatherReport : TemperatureObserver {
 }
 
 class TemperatureAlert : TemperatureObserver {
-    var notifyValue = 37
+    val notifyValue = 37
 
     override fun update( newValue : Float ) {
         if ( newValue > notifyValue )

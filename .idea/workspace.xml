@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9c5c7fc8-51ed-4d4d-a689-2eb8454facb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeatingStrategy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeatingStrategy.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sensor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sensor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TemperatureObserver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TemperatureObserver.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +28,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.23297137" />
   </component>
   <component name="RunDashboard">

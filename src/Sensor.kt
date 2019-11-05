@@ -8,7 +8,7 @@ interface Sensor {
     }
 }
 
-class RandomSensor() : Sensor {
+class RandomSensor : Sensor {
 
     private val min = -10
     private val max = 45
@@ -77,13 +77,14 @@ open class SensorLogger( var zuloggenderSensor : Sensor ) : Sensor {
 
 open class IgnoreDuplicates( var zuIgnorierndeWerteSensor : Sensor ) : Sensor {
 
-    private var oldValue = this.zuIgnorierndeWerteSensor.getTemperature()
+//    private var oldValue = this.zuIgnorierndeWerteSensor.getTemperature()
+    private var oldValue = 0.0F
 
     override fun getTemperature(): Float {
 
         var matchingSensorValue : Float = this.zuIgnorierndeWerteSensor.getTemperature()
 
-        while (matchingSensorValue.roundToInt() == oldValue.roundToInt() ) {
+        while (((matchingSensorValue*100).roundToInt())/100 == ((oldValue*100).roundToInt())/100 ) {
             matchingSensorValue = this.zuIgnorierndeWerteSensor.getTemperature()
         }
         oldValue = matchingSensorValue
